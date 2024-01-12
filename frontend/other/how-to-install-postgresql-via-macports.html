@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>How to install PostgreSQL via MacPorts on OSX | Evan&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-PHEXM93QFE" async="true"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-PHEXM93QFE');
+      </script>
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.41f50347.css" as="style"><link rel="preload" href="/assets/js/app.a558ac5a.js" as="script"><link rel="preload" href="/assets/js/10.58d1b88a.js" as="script"><link rel="preload" href="/assets/js/2.7fe25666.js" as="script"><link rel="preload" href="/assets/js/1.8980b9bc.js" as="script"><link rel="preload" href="/assets/js/49.52310326.js" as="script"><link rel="prefetch" href="/assets/js/11.7480e672.js"><link rel="prefetch" href="/assets/js/14.77e4d103.js"><link rel="prefetch" href="/assets/js/15.767347da.js"><link rel="prefetch" href="/assets/js/16.75837ee9.js"><link rel="prefetch" href="/assets/js/17.8b42675a.js"><link rel="prefetch" href="/assets/js/18.83de754f.js"><link rel="prefetch" href="/assets/js/19.64c1babe.js"><link rel="prefetch" href="/assets/js/20.eb3c9bfd.js"><link rel="prefetch" href="/assets/js/21.0ac73fe5.js"><link rel="prefetch" href="/assets/js/22.440e982a.js"><link rel="prefetch" href="/assets/js/23.14b7ea1e.js"><link rel="prefetch" href="/assets/js/24.2cc19a77.js"><link rel="prefetch" href="/assets/js/25.5a1af9bd.js"><link rel="prefetch" href="/assets/js/26.1dbf73a6.js"><link rel="prefetch" href="/assets/js/27.f35d0d7a.js"><link rel="prefetch" href="/assets/js/28.d3b1bd05.js"><link rel="prefetch" href="/assets/js/29.156c7c28.js"><link rel="prefetch" href="/assets/js/3.b2e8d6d0.js"><link rel="prefetch" href="/assets/js/30.d0ef52da.js"><link rel="prefetch" href="/assets/js/31.3141c712.js"><link rel="prefetch" href="/assets/js/32.fb2a7e01.js"><link rel="prefetch" href="/assets/js/33.60948b59.js"><link rel="prefetch" href="/assets/js/34.f7619399.js"><link rel="prefetch" href="/assets/js/35.6490ea95.js"><link rel="prefetch" href="/assets/js/36.a2c30aa4.js"><link rel="prefetch" href="/assets/js/37.4c4f8de0.js"><link rel="prefetch" href="/assets/js/38.1230e082.js"><link rel="prefetch" href="/assets/js/39.618e2b6e.js"><link rel="prefetch" href="/assets/js/4.7883f2b1.js"><link rel="prefetch" href="/assets/js/40.bc7d5fd1.js"><link rel="prefetch" href="/assets/js/41.f9f2f594.js"><link rel="prefetch" href="/assets/js/42.7a8c93b6.js"><link rel="prefetch" href="/assets/js/43.ff58b174.js"><link rel="prefetch" href="/assets/js/44.4cb3b30c.js"><link rel="prefetch" href="/assets/js/45.f15b11c7.js"><link rel="prefetch" href="/assets/js/46.80e4a51b.js"><link rel="prefetch" href="/assets/js/47.5ca31691.js"><link rel="prefetch" href="/assets/js/48.5d192a8f.js"><link rel="prefetch" href="/assets/js/5.180fde47.js"><link rel="prefetch" href="/assets/js/50.82d6e2db.js"><link rel="prefetch" href="/assets/js/51.d0bb03e0.js"><link rel="prefetch" href="/assets/js/52.bf0b3ca2.js"><link rel="prefetch" href="/assets/js/53.26741547.js"><link rel="prefetch" href="/assets/js/54.4d74c40c.js"><link rel="prefetch" href="/assets/js/55.2cc4e873.js"><link rel="prefetch" href="/assets/js/56.bb2e229a.js"><link rel="prefetch" href="/assets/js/57.52f6ff68.js"><link rel="prefetch" href="/assets/js/58.76d668cd.js"><link rel="prefetch" href="/assets/js/59.b03dda21.js"><link rel="prefetch" href="/assets/js/6.df748d3e.js"><link rel="prefetch" href="/assets/js/60.099a8d24.js"><link rel="prefetch" href="/assets/js/61.d3ea715f.js"><link rel="prefetch" href="/assets/js/62.56b719bf.js"><link rel="prefetch" href="/assets/js/63.5c213900.js"><link rel="prefetch" href="/assets/js/64.47676a52.js"><link rel="prefetch" href="/assets/js/65.e609f20c.js"><link rel="prefetch" href="/assets/js/66.6acc82e5.js"><link rel="prefetch" href="/assets/js/67.faf9a8ab.js"><link rel="prefetch" href="/assets/js/68.17c0704e.js"><link rel="prefetch" href="/assets/js/69.cd839ad6.js"><link rel="prefetch" href="/assets/js/7.d03bf257.js"><link rel="prefetch" href="/assets/js/70.f6ce40f5.js"><link rel="prefetch" href="/assets/js/71.f016426d.js"><link rel="prefetch" href="/assets/js/72.83b722de.js"><link rel="prefetch" href="/assets/js/73.4adccae9.js"><link rel="prefetch" href="/assets/js/74.1adc8aa0.js"><link rel="prefetch" href="/assets/js/75.e46164a6.js"><link rel="prefetch" href="/assets/js/76.8b5875a4.js"><link rel="prefetch" href="/assets/js/77.92eae67e.js"><link rel="prefetch" href="/assets/js/78.4cb6e049.js"><link rel="prefetch" href="/assets/js/79.03859c97.js"><link rel="prefetch" href="/assets/js/8.ecffb889.js"><link rel="prefetch" href="/assets/js/80.1288e8f0.js"><link rel="prefetch" href="/assets/js/81.d8841b36.js"><link rel="prefetch" href="/assets/js/82.e50feb3f.js"><link rel="prefetch" href="/assets/js/83.4553329a.js"><link rel="prefetch" href="/assets/js/84.faca13fe.js"><link rel="prefetch" href="/assets/js/85.cda6f0d0.js"><link rel="prefetch" href="/assets/js/86.4b93d23e.js"><link rel="prefetch" href="/assets/js/87.84ce55e8.js"><link rel="prefetch" href="/assets/js/88.651a4fd5.js"><link rel="prefetch" href="/assets/js/89.e8aa0f21.js"><link rel="prefetch" href="/assets/js/9.7babaa2e.js"><link rel="prefetch" href="/assets/js/90.d189b2da.js"><link rel="prefetch" href="/assets/js/91.befac5d7.js"><link rel="prefetch" href="/assets/js/92.3825ad82.js"><link rel="prefetch" href="/assets/js/93.b229e59f.js"><link rel="prefetch" href="/assets/js/94.703fe491.js"><link rel="prefetch" href="/assets/js/95.299fd1b4.js"><link rel="prefetch" href="/assets/js/96.dd1e2aab.js"><link rel="prefetch" href="/assets/js/97.b0c53a50.js"><link rel="prefetch" href="/assets/js/98.9eed6020.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.719578e8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.41f50347.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/left-logo.png" alt="Evan's Blog" class="logo"> <span class="site-name can-hide">Evan's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend/" class="nav-link router-link-active">
+  大前端
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  运维
+</a></div><div class="nav-item"><a href="/article/" class="nav-link">
+  Article
+</a></div><div class="nav-item"><a href="/english/" class="nav-link">
+  English learning
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/vanoneang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend/" class="nav-link router-link-active">
+  大前端
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  运维
+</a></div><div class="nav-item"><a href="/article/" class="nav-link">
+  Article
+</a></div><div class="nav-item"><a href="/english/" class="nav-link">
+  English learning
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/vanoneang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NodeJS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Other</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/other/mysql.html" class="sidebar-link">MySQL</a></li><li><a href="/frontend/other/hybrid.html" class="sidebar-link">hybrid</a></li><li><a href="/frontend/other/the-little-knowledge.html" class="sidebar-link">日常小知识点</a></li><li><a href="/frontend/other/azure-storage.html" class="sidebar-link">Azure Storage</a></li><li><a href="/frontend/other/mobile-adaptive.html" class="sidebar-link">H5页面终端适配</a></li><li><a href="/frontend/other/how-to-install-postgresql-via-macports.html" aria-current="page" class="active sidebar-link">How to install PostgreSQL via MacPorts on OSX</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/other/how-to-install-postgresql-via-macports.html#use" class="sidebar-link">Use</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="how-to-install-postgresql-via-macports-on-osx"><a href="#how-to-install-postgresql-via-macports-on-osx" class="header-anchor">#</a> How to install PostgreSQL via MacPorts on OSX</h1> <div class="custom"><p>In order to install PostgreSQL on OSX, you need to know which versions are currently supported.</p> <p>Use this command to see what versions you have available.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> port list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;^postgresql[[:digit:]]\{2\}[[:space:]]&quot;</span>
+</code></pre></div><p>You should get a list that looks like the following:</p> <div class="language- extra-class"><pre class="language-text"><code>postgresql10                   @10.14          databases/postgresql10
+postgresql11                   @11.9           databases/postgresql11
+postgresql12                   @12.4           databases/postgresql12
+postgresql13                   @13.1           databases/postgresql13
+postgresql80                   @8.0.26         databases/postgresql80
+postgresql81                   @8.1.23         databases/postgresql81
+postgresql82                   @8.2.23         databases/postgresql82
+postgresql83                   @8.3.23         databases/postgresql83
+postgresql84                   @8.4.22         databases/postgresql84
+postgresql90                   @9.0.23         databases/postgresql90
+postgresql91                   @9.1.24         databases/postgresql91
+postgresql92                   @9.2.24         databases/postgresql92
+postgresql93                   @9.3.25         databases/postgresql93
+postgresql94                   @9.4.26         databases/postgresql94
+postgresql95                   @9.5.23         databases/postgresql95
+postgresql96                   @9.6.19         databases/postgresql96
+</code></pre></div><p>Today, I'm going to use the version of 12.4.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> port <span class="token function">install</span> postgresql12-server postgresql12
+</code></pre></div><p>We can see the installation log like this:</p> <div class="language- extra-class"><pre class="language-text"><code> Some of the ports you installed have notes:
+  apache2 has the following notes:
+    For information about configuring Apache2, see
+    https://trac.macports.org/wiki/howto/Apache2
+
+    A startup item has been generated that will aid in starting apache2 with
+    launchd. It is disabled by default. Execute the following command to start
+    it, and to cause it to launch at startup:
+
+        sudo port load apache2
+  libidn has the following notes:
+    Please be aware that GNU libidn2 is the successor of GNU libidn. It comes
+    with IDNA 2008
+    and TR46 implementations and also provides a compatibility layer for GNU
+    libidn.
+  libpsl has the following notes:
+    libpsl API documentation is provided by the port 'libpsl-docs'.
+  mariadb-10.1 has the following notes:
+    On activation if no /opt/local/etc/mariadb-10.1/my.cnf file exists one
+    will be created which loads
+    /opt/local/etc/mariadb-10.1/macports-default.cnf.
+
+    If a /opt/local/etc/mariadb-10.1/my.cnf file exists MacPorts does not
+    touch it and any changes you make to /opt/local/etc/mariadb-10.1/my.cnf
+    will be preserved (e.g., during port upgrades, deactivations or
+    activations). /opt/local/etc/mariadb-10.1/my.cnf is a good place to
+    customize your mariadb-10.1 installation.
+
+    Any changes made to /opt/local/etc/mariadb-10.1/macports-default.cnf
+    will be lost during port upgrades, deactivations or activations so you
+    are advised to not make changes here. Currently
+    /opt/local/etc/mariadb-10.1/macports-default.cnf contains only one
+    directive; to disable networking. With disabled networking it is
+    possible to install and have running all the MacPorts mysql ports
+    simultaneously.
+  nginx has the following notes:
+    A set of sample configuration files has been installed in
+    /opt/local/share/nginx/examples.
+
+    Additionally, the files nginx.conf, mime.types, fastcgi.conf have been
+    copied to /opt/local/etc/nginx if they didn't exist yet.
+    Adjust these files to your needs before starting nginx.
+
+    A startup item has been generated that will aid in starting nginx with
+    launchd. It is disabled by default. Execute the following command to start
+    it, and to cause it to launch at startup:
+
+        sudo port load nginx
+  postgresql12 has the following notes:
+    To use the postgresql server, install the postgresql12-server port
+  postgresql12-server has the following notes:
+    To create a database instance, after install do
+     sudo mkdir -p /opt/local/var/db/postgresql12/defaultdb
+     sudo chown postgres:postgres /opt/local/var/db/postgresql12/defaultdb
+     sudo su postgres -c 'cd /opt/local/var/db/postgresql12 &amp;&amp;
+    /opt/local/lib/postgresql12/bin/initdb -D
+    /opt/local/var/db/postgresql12/defaultdb'
+
+    A startup item has been generated that will aid in starting
+    postgresql12-server with launchd. It is disabled by default. Execute the
+    following command to start it, and to cause it to launch at startup:
+
+        sudo port load postgresql12-server
+  python27 has the following notes:
+    To make this the default Python or Python 2 (i.e., the version run by the
+    'python' or 'python2' commands), run one or both of:
+
+        sudo port select --set python python27
+        sudo port select --set python2 python27
+  python37 has the following notes:
+    To make this the default Python or Python 3 (i.e., the version run by the
+    'python' or 'python3' commands), run one or both of:
+
+        sudo port select --set python python37
+        sudo port select --set python3 python37
+  python38 has the following notes:
+    To make this the default Python or Python 3 (i.e., the version run by the
+    'python' or 'python3' commands), run one or both of:
+
+        sudo port select --set python python38
+        sudo port select --set python3 python38
+  rsync has the following notes:
+    To use the rsyncd server you must copy /opt/local/etc/rsyncd.conf.example to
+    rsyncd.conf and add your modules there. See 'man rsyncd.conf' for more
+    information.
+
+    A startup item has been generated that will aid in starting rsync with
+    launchd. It is disabled by default. Execute the following command to start
+    it, and to cause it to launch at startup:
+
+        sudo port load rsync
+</code></pre></div><p>Here is the key message:</p> <div class="language- extra-class"><pre class="language-text"><code>sudo mkdir -p /opt/local/var/db/postgresql12/defaultdb
+sudo chown postgres:postgres /opt/local/var/db/postgresql12/defaultdb
+sudo su postgres -c 'cd /opt/local/var/db/postgresql12 &amp;&amp; /opt/local/lib/postgresql12/bin/initdb -D /opt/local/var/db/postgresql12/defaultdb'
+</code></pre></div><p>The files belonging to this database system will be owned by user &quot;postgres&quot;.This user must also own the server process.</p> <div class="language- extra-class"><pre class="language-text"><code>fixing permissions on existing directory /opt/local/var/db/postgresql12/defaultdb ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Asia/Shanghai
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+</code></pre></div><p>All the databases installed via MacPorts are located in the following position.</p> <div class="language- extra-class"><pre class="language-text"><code>ls /opt/local/var/db
+mariadb-10.1 mongodb      php71        postgresql12 redis
+</code></pre></div><p>Now we start the server:</p> <div class="language- extra-class"><pre class="language-text"><code>sudo port load postgresql12-server
+</code></pre></div><p>Use ps command to check the process:</p> <div class="language- extra-class"><pre class="language-text"><code>ps -ef | grep postgres
+</code></pre></div><p>To use the <code>psql</code> command we should set the environment path.</p> <div class="language- extra-class"><pre class="language-text"><code>vi ~/.profile
+export PATH=/opt/local/lib/postgresql12/bin:$PATH
+source ~/.profile
+</code></pre></div><p>PostgreSQL can only performed via <code>postgres</code> user. Let's switch the user.</p> <div class="language- extra-class"><pre class="language-text"><code>sudo su postgres
+</code></pre></div><p>Check the version:</p> <div class="language- extra-class"><pre class="language-text"><code>sh-3.2$ psql --version
+psql (PostgreSQL) 12.4
+</code></pre></div><p>Show databases:</p> <div class="language- extra-class"><pre class="language-text"><code>psql -l
+</code></pre></div><p>You will see a prompt from postgres:</p> <div class="language- extra-class"><pre class="language-text"><code>sh-3.2$ psql
+psql (12.4)
+Type &quot;help&quot; for help.
+
+postgres=#
+</code></pre></div><p>Here you can type a query to see that the server is running.</p> <div class="language- extra-class"><pre class="language-text"><code>postgres=# SELECT setting FROM pg_settings WHERE name='data_directory';
+</code></pre></div><p>And see the response:</p> <div class="language- extra-class"><pre class="language-text"><code>                 setting
+------------------------------------------
+ /opt/local/var/db/postgresql12/defaultdb
+(1 row)
+
+postgres=#
+</code></pre></div><p>Congratulations! You now have a running PostgreSQL instance on OS/X.</p> <h2 id="use"><a href="#use" class="header-anchor">#</a> Use</h2> <p>Create database:</p> <div class="language- extra-class"><pre class="language-text"><code>createdb db_name
+</code></pre></div><p>Choose the database:</p> <div class="language- extra-class"><pre class="language-text"><code>psql db_name
+</code></pre></div><p>Create table:</p> <div class="language- extra-class"><pre class="language-text"><code>create table users (name varchar(20));
+</code></pre></div><p>Check tables:</p> <div class="language- extra-class"><pre class="language-text"><code>db_name=# \dt
+         List of relations
+ Schema | Name  | Type  |  Owner
+--------+-------+-------+----------
+ public | users | table | postgres
+(1 row)
+</code></pre></div><p>Select target table:</p> <div class="language- extra-class"><pre class="language-text"><code>db_name=# \d users
+                      Table &quot;public.users&quot;
+ Column |         Type          | Collation | Nullable | Default
+--------+-----------------------+-----------+----------+---------
+ name   | character varying(20) |           |          |
+</code></pre></div><p>Delete table:</p> <div class="language- extra-class"><pre class="language-text"><code>db_name=# drop table users;
+DROP TABLE
+</code></pre></div><p>Import sql file:</p> <div class="language- extra-class"><pre class="language-text"><code>sh-3.2$ psql test
+psql (12.4)
+Type &quot;help&quot; for help.
+
+test=# \i init.sql
+CREATE TABLE
+</code></pre></div><p><a href="https://www.postgresql.org/docs/12/datatype.html" target="_blank" rel="noopener noreferrer">Data type<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/other/mobile-adaptive.html" class="prev">
+        H5页面终端适配
+      </a></span> <!----></p></div> <img src="/assets/img/bottom-logo.385a53c5.png" style="position:absolute;width:135px;left:calc(100% / 2 + 50px);transform:translateX(-50%);"></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a558ac5a.js" defer></script><script src="/assets/js/10.58d1b88a.js" defer></script><script src="/assets/js/2.7fe25666.js" defer></script><script src="/assets/js/1.8980b9bc.js" defer></script><script src="/assets/js/49.52310326.js" defer></script>
+  </body>
+</html>

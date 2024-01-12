@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Webpack | Evan&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-PHEXM93QFE" async="true"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-PHEXM93QFE');
+      </script>
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.41f50347.css" as="style"><link rel="preload" href="/assets/js/app.a558ac5a.js" as="script"><link rel="preload" href="/assets/js/10.58d1b88a.js" as="script"><link rel="preload" href="/assets/js/2.7fe25666.js" as="script"><link rel="preload" href="/assets/js/1.8980b9bc.js" as="script"><link rel="preload" href="/assets/js/89.e8aa0f21.js" as="script"><link rel="preload" href="/assets/js/5.180fde47.js" as="script"><link rel="prefetch" href="/assets/js/11.7480e672.js"><link rel="prefetch" href="/assets/js/14.77e4d103.js"><link rel="prefetch" href="/assets/js/15.767347da.js"><link rel="prefetch" href="/assets/js/16.75837ee9.js"><link rel="prefetch" href="/assets/js/17.8b42675a.js"><link rel="prefetch" href="/assets/js/18.83de754f.js"><link rel="prefetch" href="/assets/js/19.64c1babe.js"><link rel="prefetch" href="/assets/js/20.eb3c9bfd.js"><link rel="prefetch" href="/assets/js/21.0ac73fe5.js"><link rel="prefetch" href="/assets/js/22.440e982a.js"><link rel="prefetch" href="/assets/js/23.14b7ea1e.js"><link rel="prefetch" href="/assets/js/24.2cc19a77.js"><link rel="prefetch" href="/assets/js/25.5a1af9bd.js"><link rel="prefetch" href="/assets/js/26.1dbf73a6.js"><link rel="prefetch" href="/assets/js/27.f35d0d7a.js"><link rel="prefetch" href="/assets/js/28.d3b1bd05.js"><link rel="prefetch" href="/assets/js/29.156c7c28.js"><link rel="prefetch" href="/assets/js/3.b2e8d6d0.js"><link rel="prefetch" href="/assets/js/30.d0ef52da.js"><link rel="prefetch" href="/assets/js/31.3141c712.js"><link rel="prefetch" href="/assets/js/32.fb2a7e01.js"><link rel="prefetch" href="/assets/js/33.60948b59.js"><link rel="prefetch" href="/assets/js/34.f7619399.js"><link rel="prefetch" href="/assets/js/35.6490ea95.js"><link rel="prefetch" href="/assets/js/36.a2c30aa4.js"><link rel="prefetch" href="/assets/js/37.4c4f8de0.js"><link rel="prefetch" href="/assets/js/38.1230e082.js"><link rel="prefetch" href="/assets/js/39.618e2b6e.js"><link rel="prefetch" href="/assets/js/4.7883f2b1.js"><link rel="prefetch" href="/assets/js/40.bc7d5fd1.js"><link rel="prefetch" href="/assets/js/41.f9f2f594.js"><link rel="prefetch" href="/assets/js/42.7a8c93b6.js"><link rel="prefetch" href="/assets/js/43.ff58b174.js"><link rel="prefetch" href="/assets/js/44.4cb3b30c.js"><link rel="prefetch" href="/assets/js/45.f15b11c7.js"><link rel="prefetch" href="/assets/js/46.80e4a51b.js"><link rel="prefetch" href="/assets/js/47.5ca31691.js"><link rel="prefetch" href="/assets/js/48.5d192a8f.js"><link rel="prefetch" href="/assets/js/49.52310326.js"><link rel="prefetch" href="/assets/js/50.82d6e2db.js"><link rel="prefetch" href="/assets/js/51.d0bb03e0.js"><link rel="prefetch" href="/assets/js/52.bf0b3ca2.js"><link rel="prefetch" href="/assets/js/53.26741547.js"><link rel="prefetch" href="/assets/js/54.4d74c40c.js"><link rel="prefetch" href="/assets/js/55.2cc4e873.js"><link rel="prefetch" href="/assets/js/56.bb2e229a.js"><link rel="prefetch" href="/assets/js/57.52f6ff68.js"><link rel="prefetch" href="/assets/js/58.76d668cd.js"><link rel="prefetch" href="/assets/js/59.b03dda21.js"><link rel="prefetch" href="/assets/js/6.df748d3e.js"><link rel="prefetch" href="/assets/js/60.099a8d24.js"><link rel="prefetch" href="/assets/js/61.d3ea715f.js"><link rel="prefetch" href="/assets/js/62.56b719bf.js"><link rel="prefetch" href="/assets/js/63.5c213900.js"><link rel="prefetch" href="/assets/js/64.47676a52.js"><link rel="prefetch" href="/assets/js/65.e609f20c.js"><link rel="prefetch" href="/assets/js/66.6acc82e5.js"><link rel="prefetch" href="/assets/js/67.faf9a8ab.js"><link rel="prefetch" href="/assets/js/68.17c0704e.js"><link rel="prefetch" href="/assets/js/69.cd839ad6.js"><link rel="prefetch" href="/assets/js/7.d03bf257.js"><link rel="prefetch" href="/assets/js/70.f6ce40f5.js"><link rel="prefetch" href="/assets/js/71.f016426d.js"><link rel="prefetch" href="/assets/js/72.83b722de.js"><link rel="prefetch" href="/assets/js/73.4adccae9.js"><link rel="prefetch" href="/assets/js/74.1adc8aa0.js"><link rel="prefetch" href="/assets/js/75.e46164a6.js"><link rel="prefetch" href="/assets/js/76.8b5875a4.js"><link rel="prefetch" href="/assets/js/77.92eae67e.js"><link rel="prefetch" href="/assets/js/78.4cb6e049.js"><link rel="prefetch" href="/assets/js/79.03859c97.js"><link rel="prefetch" href="/assets/js/8.ecffb889.js"><link rel="prefetch" href="/assets/js/80.1288e8f0.js"><link rel="prefetch" href="/assets/js/81.d8841b36.js"><link rel="prefetch" href="/assets/js/82.e50feb3f.js"><link rel="prefetch" href="/assets/js/83.4553329a.js"><link rel="prefetch" href="/assets/js/84.faca13fe.js"><link rel="prefetch" href="/assets/js/85.cda6f0d0.js"><link rel="prefetch" href="/assets/js/86.4b93d23e.js"><link rel="prefetch" href="/assets/js/87.84ce55e8.js"><link rel="prefetch" href="/assets/js/88.651a4fd5.js"><link rel="prefetch" href="/assets/js/9.7babaa2e.js"><link rel="prefetch" href="/assets/js/90.d189b2da.js"><link rel="prefetch" href="/assets/js/91.befac5d7.js"><link rel="prefetch" href="/assets/js/92.3825ad82.js"><link rel="prefetch" href="/assets/js/93.b229e59f.js"><link rel="prefetch" href="/assets/js/94.703fe491.js"><link rel="prefetch" href="/assets/js/95.299fd1b4.js"><link rel="prefetch" href="/assets/js/96.dd1e2aab.js"><link rel="prefetch" href="/assets/js/97.b0c53a50.js"><link rel="prefetch" href="/assets/js/98.9eed6020.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.719578e8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.41f50347.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/left-logo.png" alt="Evan's Blog" class="logo"> <span class="site-name can-hide">Evan's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend/" class="nav-link router-link-active">
+  大前端
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  运维
+</a></div><div class="nav-item"><a href="/article/" class="nav-link">
+  Article
+</a></div><div class="nav-item"><a href="/english/" class="nav-link">
+  English learning
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/vanoneang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend/" class="nav-link router-link-active">
+  大前端
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  运维
+</a></div><div class="nav-item"><a href="/article/" class="nav-link">
+  Article
+</a></div><div class="nav-item"><a href="/english/" class="nav-link">
+  English learning
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/vanoneang" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/js/copy.html" class="sidebar-link">深浅拷贝</a></li><li><a href="/frontend/js/basic-knowledge.html" class="sidebar-link">JS基础知识</a></li><li><a href="/frontend/js/senior-knowledge.html" class="sidebar-link">JS高级知识</a></li><li><a href="/frontend/js/http.html" class="sidebar-link">HTTP协议原理</a></li><li><a href="/frontend/js/vue.html" class="sidebar-link">Vue源码理解</a></li><li><a href="/frontend/js/react.html" class="sidebar-link">React</a></li><li><a href="/frontend/js/vue-jsonp.html" class="sidebar-link">Vue中jsonp</a></li><li><a href="/frontend/js/webpack.html" aria-current="page" class="active sidebar-link">Webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#中文文档" class="sidebar-link">中文文档</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#为什么需要构建" class="sidebar-link">为什么需要构建</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#模块化开发" class="sidebar-link">模块化开发</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#安装webpack" class="sidebar-link">安装webpack</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#版本更迭" class="sidebar-link">版本更迭</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#核心概念" class="sidebar-link">核心概念</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#使用webpack" class="sidebar-link">使用webpack</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#打包速度优化" class="sidebar-link">打包速度优化</a></li><li class="sidebar-sub-header"><a href="/frontend/js/webpack.html#tree-shaking" class="sidebar-link">Tree-Shaking</a></li></ul></li><li><a href="/frontend/js/OAuth2.0.html" class="sidebar-link">OAuth（开放式授权）</a></li><li><a href="/frontend/js/apply-call-bind.html" class="sidebar-link">apply、call、bind</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>NodeJS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Other</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webpack"><a href="#webpack" class="header-anchor">#</a> Webpack</h1> <h2 id="中文文档"><a href="#中文文档" class="header-anchor">#</a> <a href="https://webpack.docschina.org/concepts/" target="_blank" rel="noopener noreferrer">中文文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h2> <h2 id="为什么需要构建"><a href="#为什么需要构建" class="header-anchor">#</a> 为什么需要构建</h2> <ul><li><p>前端工程复杂化，文件越来越多</p></li> <li><p>框架演变：</p></li></ul> <p><code>js库——&gt;MVC——&gt;MV*(模块化)</code></p> <ul><li>HTML发展历史</li></ul> <img src="/assets/html.png"> <ul><li>CSS发展历史</li></ul> <img src="/assets/css.png"> <ul><li>前端脚本语言</li></ul> <p><code>JS-&gt;CoffeeScript-&gt;ES2018-&gt;TS</code></p> <ul><li>环境的变化</li></ul> <p>现在的前端代码，一份代码可能要跑在浏览器端、服务器端、移动端</p> <ul><li>社区的变化</li></ul> <p>现在搜索资源可以在<code>github</code>/<code>npm</code>进行搜索</p> <ul><li>构建工具的变化</li></ul> <p><code>GRUNT-&gt;GULP-&gt;WEBPACK</code></p> <p><strong>总结</strong></p> <ul><li><p>开发复杂化</p></li> <li><p>框架去中心化（非大而全）</p></li> <li><p>语言编译化（写的代码浏览器都不认识）</p></li> <li><p>开发模块化（模块化浏览器也不认识）</p></li></ul> <p><strong>为什么Webpack？</strong></p> <ul><li><p><code>Vue-cli/React-starter/Angular-cli</code>都是基于webpack打包</p></li> <li><p>代码分割<code>Code-splitting</code></p></li> <li><p>天生的模块化</p></li></ul> <h2 id="模块化开发"><a href="#模块化开发" class="header-anchor">#</a> 模块化开发</h2> <p><code>babel</code>编译ES6语法，模块化可用<code>webpack</code>和<code>rollup</code></p> <h3 id="_1-js模块化"><a href="#_1-js模块化" class="header-anchor">#</a> 1. JS模块化</h3> <ul><li><strong>命名空间（上古年代）</strong></li></ul> <p>库名.类别名.方法名 （现在看来就非常不方便了）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> NameSpace <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+NameSpace<span class="token punctuation">.</span>type <span class="token operator">=</span> NameSpace<span class="token punctuation">.</span>type <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+NameSpace<span class="token punctuation">.</span>type<span class="token punctuation">.</span><span class="token function-variable function">method</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><strong>CommonJS（node服务端使用）</strong></li></ul> <div class="language-js extra-class"><pre class="language-js"><code> Modules<span class="token operator">/</span><span class="token number">1.1</span><span class="token number">.1</span>
+
+ 一个文件为一个模块
+
+ 通过<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">module.exports</span><span class="token template-punctuation string">`</span></span>暴露模块接口
+
+ 通过<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">require</span><span class="token template-punctuation string">`</span></span>引入模块
+
+ 同步执行
+</code></pre></div><ul><li>AMD/CMD (浏览器中使用)</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">AMD</span><span class="token operator">:</span><span class="token function">依赖前置，提前执行</span><span class="token punctuation">(</span>Async Module Definition<span class="token punctuation">)</span>
+
+使用define定义模块
+
+使用require加载模块
+
+代表作：RequireJS # 这个库采用<span class="token constant">AMD</span>规范
+
+<span class="token function">define</span><span class="token punctuation">(</span>
+  <span class="token comment">// 模块名</span>
+  <span class="token string">&quot;alpha&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 依赖</span>
+  <span class="token punctuation">[</span><span class="token string">&quot;require&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;exports&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;beta&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 模块输出</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> beta</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    exports<span class="token punctuation">.</span><span class="token function-variable function">verb</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> beta<span class="token punctuation">.</span><span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+
+<span class="token constant">CMD</span><span class="token operator">:</span><span class="token function">尽可能懒加载</span><span class="token punctuation">(</span>Common Module Definition<span class="token punctuation">)</span>
+
+一个文件为一个模块
+
+使用define来定义一个模块
+
+使用require来加载一个模块
+
+代表作：SeaJS
+
+<span class="token comment">// 所有模块都通过define来定义</span>
+<span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 通过require引入依赖</span>
+  <span class="token keyword">var</span> $ <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'jquery'</span><span class="token punctuation">)</span>
+  <span class="token keyword">var</span> Spinning <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./spinning'</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// 通过module.exports提供整个接口</span>
+  module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token constant">UMD</span><span class="token operator">:</span>通用解决防范
+
+三个步骤：
+  判断是否支持<span class="token constant">AMD</span>
+  判断是否支持CommonJS
+  如果都没有，使用全局变量
+</code></pre></div><ul><li>ESM(现在用的,webpack原生支持)</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>EcmaScript  Module
+
+一个文件一个模块
+
+<span class="token keyword">import</span><span class="token operator">:</span>
+
+<span class="token keyword">import</span> theDefault<span class="token punctuation">,</span> <span class="token punctuation">{</span>named1<span class="token punctuation">,</span> named2<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'src/mylib'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>named1 <span class="token keyword">as</span> myNamed1<span class="token punctuation">,</span> named2<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'src/mylib'</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> mylib form <span class="token string">'src/mylib'</span>
+<span class="token keyword">import</span> <span class="token string">'src/mylib'</span> <span class="token comment">// 只加载</span>
+
+<span class="token keyword">export</span><span class="token operator">:</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> myVar1 <span class="token operator">=</span> <span class="token string">''</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token number">123</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token parameter">x</span> <span class="token operator">=&gt;</span> x
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x
+    <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="css模块化"><a href="#css模块化" class="header-anchor">#</a> CSS模块化</h3> <p>css设计模式 ：OOCSS（面向对象）、原子css、属性css、BEM（Block Element Modifier）</p> <h2 id="安装webpack"><a href="#安装webpack" class="header-anchor">#</a> 安装webpack</h2> <ol><li>全局安装</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code> <span class="token function">npm</span> <span class="token function">install</span> webpack <span class="token parameter variable">-g</span>
+</code></pre></div><p>然后，会报错，显示没有权限</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> <span class="token function">chown</span> <span class="token parameter variable">-R</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span> <span class="token variable"><span class="token variable">$(</span><span class="token function">npm</span> config get prefix<span class="token variable">)</span></span>/<span class="token punctuation">{</span>lib/node_modules,bin,share<span class="token punctuation">}</span>
+</code></pre></div><p>更改权限后，再次安装</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> webpack-cli <span class="token parameter variable">-g</span>
+</code></pre></div><ol start="2"><li>项目安装</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> init
+
+<span class="token function">npm</span> i webpack <span class="token parameter variable">-D</span>
+</code></pre></div><h2 id="版本更迭"><a href="#版本更迭" class="header-anchor">#</a> 版本更迭</h2> <p><strong>1. Webpack V1</strong>(2014.2)</p> <ul><li><p>编译、打包</p></li> <li><p>HMR（模块热更新）</p></li> <li><p>代码分割</p></li> <li><p>文件处理（loader、plugin）</p></li></ul> <p><strong>2. Webpack V2</strong>(2017.1)</p> <ul><li><p>Tree Shaking(会删除引入的，但并没有使用的代码，打包的代码体积更好)</p></li> <li><p>ES module</p></li> <li><p>动态Import（import函数）</p></li> <li><p>新的文档</p></li></ul> <p><strong>3. Webpack V3</strong>(2017.6)</p> <ul><li>Scope Hoisting（作用域提升）</li></ul> <p>作用：打包以后代码性能的提升</p> <p>原理：以前的版本，是把每个模块单独包裹在一个函数的闭包中，实现模块系统，闭包越多对浏览器性能影响越大；在v3版本总，将代码的模块的作用域提到单一的作用域中，保证浏览器运行速度</p> <ul><li>Magic Comments(配合动态import使用，指定webpack可以懒加载这段代码，打包后不知道叫什么名字)</li></ul> <p>可以指定打包后的文件名叫什么/chunk名叫什么</p> <p><strong>4. Webpack V4</strong>(2018.2)</p> <p><a href="https://segmentfault.com/a/1190000013608316" target="_blank" rel="noopener noreferrer">Webpack 4.0 发布:有哪些新特性？（译）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://github.com/dwqs/blog/issues/60" target="_blank" rel="noopener noreferrer">Webpack 4 不完全迁移指北<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="核心概念"><a href="#核心概念" class="header-anchor">#</a> 核心概念</h2> <h3 id="entry"><a href="#entry" class="header-anchor">#</a> Entry</h3> <p>代码的入口</p> <p>打包的入口</p> <p>可以是单个或者多个</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">index</span><span class="token operator">:</span> <span class="token string">'index.js'</span><span class="token punctuation">,</span> <span class="token comment">// 这个key可以表示为一个独特的chunk</span>
+    <span class="token literal-property property">vendor</span><span class="token operator">:</span> <span class="token string">'vendor.js'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> 
+</code></pre></div><h3 id="output"><a href="#output" class="header-anchor">#</a> Output</h3> <p>打包成的文件（bundle）</p> <p>一个或者多个</p> <p>自定义规则（hash名字）</p> <p>配合cdn</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'[name].[hash:5].js'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="loaders"><a href="#loaders" class="header-anchor">#</a> Loaders</h3> <p>处理文件(除js文件外，v4好像默认的文件更多了)</p> <p>转化为js的一个模块，引入进来</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+        <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token string">'css-loader'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>常用Loader</strong></p> <p>编译相关：</p> <p><code>babel-loader</code> <code>ts-loader</code></p> <p>样式相关:</p> <p><code>style-loader</code> <code>css-loader</code> <code>stylus-loader</code> <code>postcss-loader</code></p> <p>文件相关：</p> <p><code>file-loader</code> <code>url-loader</code></p> <h3 id="plugins"><a href="#plugins" class="header-anchor">#</a> Plugins</h3> <p>参与打包整个过程</p> <p>打包优化和压缩</p> <p>配置编译时的变量</p> <p>极其灵活</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>UglifyJsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 混淆和压缩代码</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'vant-docs'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">template</span><span class="token operator">:</span> <span class="token string">'docs/src/index.tpl'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'index.html'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">inject</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>常用Plugins</strong></p> <p>优化相关：</p> <p><code>CommonsChunkPlugin</code>(4中已被移除):用于建立一个独立文件(又称作 chunk)的功能</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>CommonsChunkPlugin</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+</code></pre></div><p><code>UglifyjsWebpackPlugin</code>:能够删除未引用代码(dead code)的压缩工具(minifier)，还可以生成<code>source-map</code></p> <p>功能相关：</p> <p><code>ExtractTextWebpackPlugin</code>:将所有的入口 chunk(entry chunks)中引用的 *.css，移动到独立分离的 CSS 文件。因此，你的样式将不再内嵌到 JS bundle 中，而是会放到一个单独的 CSS 文件（即 styles.css）当中。</p> <p><code>HtmlWebpackPlugin</code>:让插件为你生成一个HTML文件</p> <p>模块热替换插件(<code>HotModuleReplacementPlugin</code>)</p> <p><code>CopyWebpackPlugin</code>:拷贝文件</p> <h3 id="几个名词"><a href="#几个名词" class="header-anchor">#</a> 几个名词</h3> <p>Chunk: 代码块，比如说懒加载的某个代码块、公共的代码块</p> <p>Bundle: 打包过的</p> <p>Module: 模块，比如图片处理完可以叫一个模块，css处理后可以叫一个模块</p> <h2 id="使用webpack"><a href="#使用webpack" class="header-anchor">#</a> 使用webpack</h2> <ol><li>webpack命令</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>webpack <span class="token parameter variable">-h</span>
+
+webpack <span class="token parameter variable">-v</span>
+
+webpack <span class="token operator">&lt;</span>entry<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>output<span class="token operator">&gt;</span>
+</code></pre></div><ol start="2"><li>webpack配置</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>webpack <span class="token parameter variable">--config</span> webpack.conf.dev.js<span class="token punctuation">(</span>自定义的配置文件名<span class="token punctuation">)</span>
+</code></pre></div><ol start="3"><li>第三方脚手架</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>vue-cli
+
+angular-cli
+
+react-starter
+</code></pre></div><p>例子： 编译ES6/7</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">1.</span> npm init
+
+<span class="token number">2.</span> npm i webpack babel<span class="token operator">-</span>preset<span class="token operator">-</span>env babel<span class="token operator">-</span>loader babel<span class="token operator">-</span>core
+
+<span class="token number">3.</span> <span class="token string">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config webpack.config.js&quot;</span>  
+
+<span class="token number">4.</span> webpack<span class="token punctuation">.</span>config<span class="token punctuation">.</span>js
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">app</span><span class="token operator">:</span> <span class="token string">'./app.js'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'[name].[hash:8].js'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">module</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">test</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+        <span class="token literal-property property">use</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">loader</span><span class="token operator">:</span> <span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">presets</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span><span class="token string">'babel-preset-env'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">targets</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token literal-property property">browsers</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'&gt; 1%'</span><span class="token punctuation">,</span> <span class="token string">'last 2 versions'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span><span class="token punctuation">]</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token string">'/node_modules/'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token number">5.</span> app<span class="token punctuation">.</span>js
+
+<span class="token keyword">let</span> <span class="token function-variable function">func</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token constant">NUM</span> <span class="token operator">=</span> <span class="token number">34</span>
+<span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> arr2 <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> item <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'new Set(arr2)'</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>arr2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token number">6.</span> npm run build
+</code></pre></div><h2 id="打包速度优化"><a href="#打包速度优化" class="header-anchor">#</a> 打包速度优化</h2> <h3 id="分开vendor和app"><a href="#分开vendor和app" class="header-anchor">#</a> 分开vendor和app</h3> <p>减少第三方包的打包</p> <h3 id="压缩和混淆"><a href="#压缩和混淆" class="header-anchor">#</a> 压缩和混淆</h3> <p><code>UglifyJsPlugin</code>传入<code>parallel: true</code>采用并行方式打包压缩</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">new</span> <span class="token class-name">UglifyJsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">sourceMap</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="happypack"><a href="#happypack" class="header-anchor">#</a> HappyPack</h3> <h3 id="减少babel的编译时间"><a href="#减少babel的编译时间" class="header-anchor">#</a> 减少babel的编译时间</h3> <p>减少<code>resolve</code></p> <p>Deltool：去除sourceMap</p> <p>cache-loader</p> <p>升级node</p> <p>升级webpack</p> <h2 id="tree-shaking"><a href="#tree-shaking" class="header-anchor">#</a> Tree-Shaking</h2> <p>Tree-Shaking 关注于消除没有用到的代码。</p> <p>Webpack 是基于 ES6 Modules 静态语法解析的构建工具，Tree-Shaking 之所以能够在 Webpack 实现，也是得益于 ES6 Modules 静态解析的特性。ES6 的模块声明保证了依赖关系是提前确定的，使得静态分析成为可能，这样在 Webpack 中代码不需要执行就可以知道是否被使用，自然就知道哪些是无用的代码了。</p> <p>Webpack 中 Tree-Shaking 的实现步骤：</p> <ol><li>Webpack 自己来分析 ES6 Modules 的引入和使用情况，去除不使用的import引入；</li> <li>借助工具（如 uglifyjs-webpack-plugin和terser-webpack-plugin）进行删除，这些工具只在mode=production中会被使用。</li></ol> <div data-v-244f5c7a><ul class="rightMenuWrapper" data-v-244f5c7a></ul></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/js/vue-jsonp.html" class="prev">
+        Vue中jsonp
+      </a></span> <span class="next"><a href="/frontend/js/OAuth2.0.html">
+        OAuth（开放式授权）
+      </a>
+      →
+    </span></p></div> <img src="/assets/img/bottom-logo.385a53c5.png" style="position:absolute;width:135px;left:calc(100% / 2 + 50px);transform:translateX(-50%);"></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a558ac5a.js" defer></script><script src="/assets/js/10.58d1b88a.js" defer></script><script src="/assets/js/2.7fe25666.js" defer></script><script src="/assets/js/1.8980b9bc.js" defer></script><script src="/assets/js/89.e8aa0f21.js" defer></script><script src="/assets/js/5.180fde47.js" defer></script>
+  </body>
+</html>
